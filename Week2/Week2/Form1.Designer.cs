@@ -28,19 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnChangeDrawing = new Button();
             SuspendLayout();
+            // 
+            // btnChangeDrawing
+            // 
+            btnChangeDrawing.Location = new Point(31, 32);
+            btnChangeDrawing.Name = "btnChangeDrawing";
+            btnChangeDrawing.Size = new Size(155, 29);
+            btnChangeDrawing.TabIndex = 0;
+            btnChangeDrawing.Text = "Change Drawing";
+            btnChangeDrawing.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnChangeDrawing);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            Paint += Form1_Paint;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnChangeDrawing;
     }
 }
